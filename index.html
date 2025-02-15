@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre y Apellidos - Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333; /* Color de fondo del encabezado (similar a GitHub) */
+            color: #fff;
+            padding: 20px;
+        }
+
+        .navbar-brand img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            margin: 0 15px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #58a6ff !important; /* Color de enlace al pasar el mouse (similar a GitHub) */
+        }
+
+        /* Secciones */
+        section {
+            padding: 40px;
+        }
+
+        section h2 {
+            color: #333; /* Color de título de sección (más oscuro) */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Sobre mí */
+        #sobre-mi img {
+            border-radius: 50%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Tecnologías */
+        #tecnologias img {
+            max-width: 80px; /* Tamaño de iconos más pequeño */
+            margin: 10px;
+            opacity: 0.8; /* Opacidad para un estilo más sutil */
+            transition: opacity 0.3s ease; /* Transición suave para el hover */
+        }
+
+        #tecnologias img:hover {
+            opacity: 1; /* Opacidad completa al pasar el mouse */
+        }
+
+        /* Portafolio */
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3
+
+            s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            color: #333; /* Color de título de tarjeta más oscuro */
+        }
+
+        /* Testimonios */
+        #testimonios .carousel-item {
+            text-align: center;
+        }
+
+        #testimonios img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        /* Contacto */
+        #contacto {
+            background-color: #fff;
+        }
+
+        #contacto .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+
+        #contacto .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Animaciones de entrada */
+        .animate__animated.animate__fadeIn {
+            animation-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jfif" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tecnologias">Tecnologías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portafolio">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre-mi" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 animate__animated animate__fadeIn">
+                    <img src="logo.jfif" alt="Tu foto" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6 animate__animated animate__fadeIn">
+                    <h2>Sobre mí</h2>
+                    <p>¡Hola! Soy un apasionado desarrollador web FullStack con experiencia en [menciona tus áreas de
+                        experiencia]. Me encanta crear soluciones web innovadoras y funcionales que superen las
+                        expectativas de mis clientes.</p>
+                    <p>Mi enfoque principal es ofrecer un servicio de alta calidad y construir relaciones duraderas
+                        con mis clientes. Estoy comprometido con el aprendizaje continuo y la mejora constante de mis
+                        habilidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tecnologias" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Tecnologías que domino</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <img src="html.jfif" alt="HTML" class="img-fluid">
+                </div>
+                <div class="col-md-2">
+                    <img src="cssv.jpg" alt="CSS" class="img-fluid">
+                </div>
+                <div class="col-md-2">
+                    <img src="java.webp" alt="JavaScript" class="img-fluid">
+                </div>
+                <div class="col-md-2">
+                    <img src="nada.jfif" alt="React" class="img-fluid">
+                </div>
+                <div class="col-md-2">
+                    <img src="my.png" alt="MySQL" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+            <section id="portafolio" class="py-5">
+                <div class="container">
+                    <h2 class="text-center">Mi portafolio de productos</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="lax.jfif" alt="Producto 1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 1</h5>
+                                    <p class="card-text">Descripción breve del producto 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="OIP.jfif" alt="Producto 2" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 2</h5>
+                                    <p class="card-text">Descripción breve del producto 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="pnly.jfif" alt="Producto 3" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 3</h5>
+                                    <p class="card-text">Descripción breve del producto 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="kfc.jfif" alt="Producto 4" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 4</h5>
+                                    <p class="card-text">Descripción breve del producto 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="adobe.png" alt="Producto 5" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 5</h5>
+                                    <p class="card-text">Descripción breve del producto 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="saba.jfif" alt="Producto 6" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 6</h5>
+                                    <p class="card-text">Descripción breve del producto 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="testimonios" class="py-5">
+                <div class="container">
+                    <h2 class="text-center">Testimonios</h2>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/150" alt="Testimonio 1" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <p>"Excelente profesional, muy creativo y responsable. ¡Lo recomiendo ampliamente!"</p>
+                                    <p>- Cliente 1</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/150" alt="Testimonio 2" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <p>"Trabajó en mi proyecto con gran dedicación y atención al detalle. ¡El resultado fue espectacular!"</p>
+                                    <p>- Cliente 2</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/150" alt="Testimonio 3" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <p>"Superó mis expectativas. Un profesional muy talentoso y comprometido con su trabajo."</p>
+                                    <p>- Cliente 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="experiencia" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center">Experiencia Profesional</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Desarrollador de Modelos de Lenguaje</h5>
+                                    <p class="card-text">
+                                        - Desarrollo de modelos de lenguaje de última generación para Google, incluyendo BERT y LaMDA.
+                                        - Entrenamiento y ajuste fino de modelos en conjuntos de datos masivos para mejorar su precisión y rendimiento.
+                                        - Implementación de técnicas de aprendizaje automático y procesamiento de lenguaje natural (PLN).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Investigador en Inteligencia Artificial</h5>
+                                    <p class="card-text">
+                                        - Investigación en áreas de vanguardia de la IA, como aprendizaje profundo, PLN y visión por computadora.
+                                        - Publicación de artículos científicos en conferencias y revistas de renombre.
+                                        - Participación en proyectos de colaboración con universidades y otras instituciones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Creador de Contenido Educativo sobre IA</h5>
+                                    <p class="card-text">
+                                        - Creación de tutoriales, artículos y videos explicativos sobre conceptos de IA para audiencias de todos los niveles.
+                                        - Desarrollo de cursos en línea y talleres para enseñar habilidades prácticas en IA.
+                                        - Participación en eventos y conferencias para divulgar el conocimiento sobre la IA.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+            <!DOCTYPE html>
+            <html lang="es">
+            
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Tu Nombre - Portafolio</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                <style>
+                    body {
+                        font-family: 'Arial', sans-serif;
+                        background-color: #f4f4f4;
+                        color: #333;
+                    }
+            
+                    .container {
+                        max-width: 960px;
+                    }
+            
+                    /* Estilos para el encabezado */
+                    header {
+                        background-color: #333;
+                        color: #fff;
+                        padding: 20px 0;
+                    }
+            
+                    .navbar-brand img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+            
+                    .navbar-nav .nav-link {
+                        color: #fff !important;
+                        margin: 0 15px;
+                    }
+            
+                    /* Estilos generales de las secciones */
+                    section {
+                        padding: 40px 0;
+                    }
+            
+                    h2 {
+                        color: #333;
+                        margin-bottom: 20px;
+                    }
+            
+                    /* Estilos para la sección de "Proyectos" */
+                    #proyectos .card {
+                        border: none;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                        margin-bottom: 20px;
+                    }
+            
+                    #proyectos .card-img-top {
+                        height: 200px;
+                        object-fit: cover;
+                    }
+            
+                    #proyectos .card-title {
+                        font-weight: bold;
+                    }
+            
+                    /* Estilos para la sección de "Habilidades" */
+                    #habilidades .tech-icon {
+                        font-size: 24px;
+                        margin-right: 10px;
+                    }
+            
+                    /* Estilos para la sección de "Experiencia" */
+                    #experiencia ul {
+                        list-style: none;
+                        padding: 0;
+                    }
+            
+                    #experiencia li {
+                        margin-bottom: 10px;
+                    }
+            
+                    #experiencia .job-title {
+                        font-weight: bold;
+                    }
+            
+                    /* Estilos para la sección de "Contacto" */
+                    #contacto .form-label {
+                        font-weight: bold;
+                    }
+            
+                    #contacto .btn-primary {
+                        background-color: #007bff;
+                        border-color: #007bff;
+                    }
+            
+                    #contacto .btn-primary:hover {
+                        background-color: #0056b3;
+                        border-color: #0056b3;
+                    }
+                </style>
+            </head>
+
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center">Si tienes alguna pregunta o deseas solicitar mis servicios, no dudes en
+                        ponerte en contacto conmigo. Puedes hacerlo a través del siguiente formulario:</p>
+                    <form id="contactForm" action="enviar_correo.php" method="POST">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>         
+            <body>
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">
+                                <img src="logo.jfif" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contacto">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
